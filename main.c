@@ -2,23 +2,17 @@
 
 int main(void)
 {
-    int number;
+    int x;
 
     printf("input a number: ");
-    scanf("%i", &number);
+    scanf("%i", &x);
 
-    if (number > 0)
+    if (x < 0)
     {
-        printf("positive\n");
+        x = -x;
     }
-    else if (number < 0)
-    {
-        printf("negative\n");
-    }
-    else
-    {
-        printf("zero\n");
-    }
+
+    printf("The absolute value is %i\n", x);
 
     return 0;
 }
